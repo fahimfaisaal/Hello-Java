@@ -1,6 +1,5 @@
 public class Arithmetic {
     public static void main(String[] args) {
-        // Arithmetic Operators
         int a = 6;
         int b = 3;
 
