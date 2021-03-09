@@ -11,14 +11,14 @@ public class Unary {
         int b = 1;
 
         // prefix ++ -- it's will increament and decrement in the existing line
-        System.out.println(++a);
-        System.out.println(--a);
+        System.out.println(++b);
+        System.out.println(--b);
 
         // postfix ++ -- it's increment and decrement after one line
-        System.out.println("time of increament " + a++);
-        System.out.println("after increment " + a);
+        System.out.println("time of increament " + b++);
+        System.out.println("after increment " + b);
 
-        System.out.println("time of decrement " + a--);
-        System.out.println("after decrement " + a);
+        System.out.println("time of decrement " + b--);
+        System.out.println("after decrement " + b);
     }
 }
