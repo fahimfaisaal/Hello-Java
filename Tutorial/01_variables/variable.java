@@ -1,25 +1,37 @@
 public class variable {
     public static void main(String[] args) {
-        // boolean variable
+        // boolean variable (Size -> 1 bit (Range -> true, false) Default -> false)
         boolean truthyValue = true;
         boolean falsyVlaue = false;
 
         System.out.println(truthyValue);
         System.out.println(falsyVlaue);
 
-        // integer variable
+        // byte variable (Size -> 1 Byte (8 bits) Range of value -> -128 to 127 Default -> 0)
+        byte byteVar = 123;
+        System.out.println(byteVar);
+
+        // short variable (Size -> 2 Byte (16 bits) Range of value -> -32768 to 32768 Default -> 0)
+        short shortVar = 30000;
+        System.out.println(shortVar);
+
+        // integer variable (Size -> 4 Byte (32 bits) Range of value -> -2147483648 to 2147483648 Default -> 0)
         int integerValue = 19;
         System.out.println(integerValue);
 
-        // floating variable
+        // long variable (Size -> 8 Byte (64 bits) Default -> 0)
+        long longValue = 12334567891011L;
+        System.out.println(longValue);
+
+        // floating variable (Size -> 4 Byte (32 bits) Default -> 0.0)
         float floatingVlaue = 19.5F;
         System.out.println(floatingVlaue);
 
-        // double variable
+        // double variable (Size -> 8 Byte (64 bits) Default -> 0.0)
         double doubleValue = 19999.555e2;
         System.out.println(doubleValue);
 
-        // char variable
+        // char variable (Size -> 2 Byte (16 bits) Default -> \u0000)
         char a = 'a';
         char A = 'A';
 
