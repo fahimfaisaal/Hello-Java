@@ -1,3 +1,5 @@
+package Class;
+
 class Overloading {
     // overloading method mean same method name but diffrent parameters and different work flow
     private String sum(int a, int b) {

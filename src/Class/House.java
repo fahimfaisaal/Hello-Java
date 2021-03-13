@@ -1,3 +1,5 @@
+package Class;
+
 public class House {
     public String owner = "Fahim Faisal";
 

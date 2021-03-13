@@ -1,3 +1,5 @@
+package Class;
+
 public class Constructor {
 	 private String name;
 
