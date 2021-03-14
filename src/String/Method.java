@@ -10,9 +10,9 @@ public class Method {
 		 System.out.println("String: " + hello + world);
 		 System.out.println("Length: " + length);
 
-		/*
-			* substring method
-		 	* syntax of substring method -> string.substring(int startIndex, int endIndex)
+		 /*
+		 * substring method
+		 * syntax of substring method -> string.substring(int startIndex, int endIndex)
 		 */
 		 String mainStr = "Hello, I am Fahim and i am 22";
 		 String subStr = mainStr.substring(7, 17);
@@ -21,9 +21,9 @@ public class Method {
 		 System.out.println("Sub String: " + subStr);
 
 		 /*
-		 	* replace method
-		 	* syntax of replace method -> string.replace(char oldChar, char newChar)
-		  */
+		 * replace method
+		 * syntax of replace method -> string.replace(char oldChar, char newChar)
+		 */
 		String palindrome = "madam";
 		System.out.println("madam to ladal -> " + palindrome.replace('m', 'l'));
 
