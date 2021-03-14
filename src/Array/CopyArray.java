@@ -38,6 +38,12 @@ class CopyArray {
 
         System.out.println("-------");
         // Builtin method
+        int[] numbers4 = new int[copyArray.length];
 
+        System.arraycopy(copyArray, 0, numbers4, 0, copyArray.length);
+
+        for (int number: numbers4) {
+            System.out.println(number);
+        }
     }
 }
