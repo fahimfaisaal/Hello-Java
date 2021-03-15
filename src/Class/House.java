@@ -1,7 +1,21 @@
 package Class;
 
 public class House {
-    public String owner = "Fahim Faisal";
+    public String owner;
+    private String ownerGmail;
+
+    public House(String owner , String ownerGmail) {
+        this.owner = owner;
+        this.ownerGmail = ownerGmail;
+    }
+
+    public String getOwnerGmail() {
+        return this.ownerGmail;
+    }
+
+    public void setOwnerGmail(String gmail) {
+        this.ownerGmail = gmail;
+    }
 
     public void door() {
         System.out.println("This is my main door");
@@ -17,18 +31,5 @@ public class House {
 
     public void dining() {
         System.out.println("This is my dining");
-    }
-
-    public static void main(String[] args) {
-        House myHouse = new House();
-
-        // access property
-        System.out.println("Hello, I'm " + myHouse.owner + ". This is my house.");
-
-        // call methods
-        myHouse.door();
-        myHouse.window();
-        myHouse.kitchen();
-        myHouse.dining();
     }
 }

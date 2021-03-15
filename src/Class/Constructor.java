@@ -1,7 +1,8 @@
 package Class;
 
 public class Constructor {
-	 private String name;
+	 public String name;
+	 public int age;
 
 	 // no args constructor
 //	 Constructor() {
@@ -10,14 +11,18 @@ public class Constructor {
 //		  name = "Fahim Faisaal";
 //	 }
 
-	 // args constructor
-	 Constructor(String myName) {
-	 	 name = myName;
-	 	 System.out.println("My name is " + myName);
-	 }
 
-	 public static void main(String[] args) {
-	 	 Constructor obj = new Constructor("Fahim Faisaal");
-	 	 System.out.println("I am " + obj.name);
+	@Override
+	public String toString() {
+		return "Constructor {" +
+				"name = '" + name + '\'' +
+				", age = " + age +
+				'}';
+	}
+
+	// args constructor
+	 public Constructor(String myName, int myAge) {
+	 	 name = myName;
+	 	 age = myAge;
 	 }
 }
