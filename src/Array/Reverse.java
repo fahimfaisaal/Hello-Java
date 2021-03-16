@@ -2,12 +2,12 @@ package Array;
 import java.util.*;
 
 public class Reverse {
-    public static void reverseLong(long[] array) {
+    public static void reverseLong(String[] array) {
         int len = array.length - 1;
         int operationLen = array.length / 2;
 
         for (int i = 0; i < operationLen; i++) {
-            long swap = array[i];
+            String swap = array[i];
             array[i] = array[len - i];
             array[len - i] = swap;
         }
@@ -18,15 +18,15 @@ public class Reverse {
 
         int len = input.nextInt();
 
-        long[] numbers = new long[len];
+        String[] items = new String[len];
         for (int i = 0; i < len; i++) {
-            numbers[i] = input.nextLong();
+            items[i] = input.next();
         }
 
-        Reverse.reverseLong(numbers);
+        Reverse.reverseLong(items);
 
-        for (long number: numbers) {
-            System.out.print(number + " ");
+        for (String item: items) {
+            System.out.print(item + " ");
         }
 
         System.out.print("\n");

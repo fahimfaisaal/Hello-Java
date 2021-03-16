@@ -1,6 +1,7 @@
 package Main;
 import Class.Constructor;
 import Class.House;
+import AccessModifer.Modifier;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,5 +17,17 @@ public class Main {
 
         System.out.println("My name is " + myConstructor.name);
         System.out.println("The object is -> " + myConstructor.toString());
+
+        Modifier modifier = new Modifier();
+
+        // public variable
+        System.out.println(modifier.publicVariable);
+
+        // public method
+        System.out.println(modifier.publicMethod());
+
+        // private variable
+        modifier.setPrivateVariable("Hello, I'm private Variable.");
+        System.out.println(modifier.getPrivateVariable());
     }
 }
