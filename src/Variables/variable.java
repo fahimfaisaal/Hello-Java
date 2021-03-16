@@ -1,3 +1,5 @@
+package Variables;
+
 public class variable {
     public static void main(String[] args) {
         // boolean variable (Size -> 1 bit (Range -> true, false) Default -> false)
