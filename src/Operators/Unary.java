@@ -17,7 +17,7 @@ public class Unary {
         System.out.println(--b);
 
         // postfix ++ -- it's increment and decrement after one line
-        System.out.println("time of increament " + b++);
+        System.out.println("time of increment " + b++);
         System.out.println("after increment " + b);
 
         System.out.println("time of decrement " + b--);

@@ -8,7 +8,7 @@ public class Arithmetic {
         // 1. Addition operator (+)
         System.out.println("a + b = " + (a + b));
 
-        // 2. Substraction operator (-)
+        // 2. Subtraction operator (-)
         System.out.println("a - b = " + (a - b));
 
         // 3. Multiplication operator (*)

@@ -25,8 +25,8 @@ public class Modifier {
     }
 
     // this is private method
-    private void privateMethod() {
-        System.out.println("Hello, I'm private method");
+    private String privateMethod() {
+        return "Hello, I'm private method";
     }
 
     // this is protected method
@@ -38,15 +38,16 @@ public class Modifier {
 
     // get private variable
     public String getPrivateVariable() {
-        // default variable can use in class method only
-        System.out.println(defaultVariable);
+        // default variable and method can use in class's method only
+        System.out.println(this.defaultVariable);
+        System.out.println(this.defaultMethod());
 
         return this.privateVariable;
     }
 
     // get private method
-    public void getPrivateMethod() {
-        this.privateMethod();
+    public String getPrivateMethod() {
+        return this.privateMethod();
     }
 
     // set private variable

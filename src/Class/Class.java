@@ -9,7 +9,7 @@ public class Class {
     }
 
     public static void main(String[] args) {
-        // create a instacne object form Class class
+        // create a instance object form Class class
         Class obj = new Class();
 
         // access property

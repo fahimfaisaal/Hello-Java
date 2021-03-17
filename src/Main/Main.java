@@ -2,6 +2,7 @@ package Main;
 import Class.Constructor;
 import Class.House;
 import AccessModifer.Modifier;
+import AccessModifer.ProtectedModifier;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,5 +30,13 @@ public class Main {
         // private variable
         modifier.setPrivateVariable("Hello, I'm private Variable.");
         System.out.println(modifier.getPrivateVariable());
+
+        // private method
+        System.out.println(modifier.getPrivateMethod());
+
+        // protected variable
+        ProtectedModifier protectedModifier = new ProtectedModifier();
+
+        protectedModifier.protectedMethodVariable();
     }
 }

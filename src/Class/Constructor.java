@@ -11,18 +11,17 @@ public class Constructor {
 //		  name = "Fahim Faisaal";
 //	 }
 
+	// args constructor
+	 public Constructor(String name, int age) {
+	 	 this.name = name;
+	 	 this.age = age;
+	 }
 
 	@Override
 	public String toString() {
 		return "Constructor {" +
-				"name = '" + name + '\'' +
-				", age = " + age +
-				'}';
+				  "name = '" + name + '\'' +
+				  ", age = " + age +
+				  '}';
 	}
-
-	// args constructor
-	 public Constructor(String myName, int myAge) {
-	 	 name = myName;
-	 	 age = myAge;
-	 }
 }
