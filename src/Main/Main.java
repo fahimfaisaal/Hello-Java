@@ -3,6 +3,8 @@ import Class.Constructor;
 import Class.House;
 import AccessModifer.Modifier;
 import AccessModifer.ProtectedModifier;
+import Final.FinalVariable;
+import Inheritance.Dog;
 
 public class Main {
     public static void main(String[] args) {
@@ -38,5 +40,31 @@ public class Main {
         ProtectedModifier protectedModifier = new ProtectedModifier();
 
         protectedModifier.protectedMethodVariable();
+
+        // final keyword
+        FinalVariable finalVar = new FinalVariable();
+
+        System.out.println("Constant integer = " + finalVar.constantA);
+        System.out.println("Constant float = " + finalVar.constantB);
+        System.out.println("Constant Long = " + finalVar.constantC);
+        System.out.println("Constant String = " + finalVar.constantD);
+
+        // extends class (Inheritance)
+        System.out.println("Inheritance -->");
+        Dog dog = new Dog("dog", 4, true, false);
+
+        System.out.println("extends the super class methods (Animal) ->");
+        System.out.println(dog.displayName());
+        System.out.println(dog.numberOfLegs());
+        System.out.println(dog.haveTail());
+        System.out.println(dog.canFly());
+        System.out.println("____________");
+
+        // call the override method
+        System.out.println("override method = " + dog.eat());
+
+        // new method of dog class
+        System.out.println("new method = " + dog.canBark());
+
     }
 }
