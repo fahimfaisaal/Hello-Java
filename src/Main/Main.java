@@ -5,6 +5,7 @@ import AccessModifer.Modifier;
 import AccessModifer.ProtectedModifier;
 import Final.FinalVariable;
 import Inheritance.Dog;
+import Inheritance.Parrot;
 
 public class Main {
     public static void main(String[] args) {
@@ -66,5 +67,17 @@ public class Main {
         // new method of dog class
         System.out.println("new method = " + dog.canBark());
 
+        System.out.println("Parrot class ->");
+
+        Parrot parrot = new Parrot("parrot", 2, false, true);
+
+        System.out.println("Override method -> " + parrot.eat());
+        System.out.println("New method in parrot class -> " + parrot.canTalk());
+
+        System.out.println("Inheritance methods of animal ->");
+        System.out.println(parrot.displayName());
+        System.out.println(parrot.numberOfLegs());
+        System.out.println(parrot.canFly());
+        System.out.println(parrot.haveTail());
     }
 }

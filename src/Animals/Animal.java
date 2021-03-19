@@ -1,7 +1,7 @@
 package Animals;
 
 public class Animal {
-	private String name;
+	public final String name;
 	private int numberOfLegs;
 	private boolean tail;
 	private boolean canFly;
