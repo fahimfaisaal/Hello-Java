@@ -11,6 +11,7 @@ public class Parrot extends Animal {
 		return "Hey, I can talk. I'm " + this.name + ".";
 	}
 
+	@Override
 	public String eat() {
 		return this.name + " eat birds food.";
 	}

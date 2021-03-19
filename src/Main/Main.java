@@ -6,6 +6,8 @@ import AccessModifer.ProtectedModifier;
 import Final.FinalVariable;
 import Inheritance.Dog;
 import Inheritance.Parrot;
+import Super.SuperClass;
+import Super.SubClass;
 
 public class Main {
     public static void main(String[] args) {
@@ -79,5 +81,18 @@ public class Main {
         System.out.println(parrot.numberOfLegs());
         System.out.println(parrot.canFly());
         System.out.println(parrot.haveTail());
+
+        System.out.println("---------");
+        System.out.println("Super Class ->");
+
+        SuperClass Super = new SuperClass();
+        System.out.println(Super.displayType());
+
+        System.out.println("Sub Class ->");
+        SubClass sub = new SubClass();
+        System.out.println(sub.displayType());
+
+        sub.printSuperMethod();
+        sub.printSuperValue();
     }
 }
