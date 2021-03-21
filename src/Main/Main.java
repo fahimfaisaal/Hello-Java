@@ -8,6 +8,7 @@ import Inheritance.Dog;
 import Inheritance.Parrot;
 import Super.SuperClass;
 import Super.SubClass;
+import AbstractJava.Abstract;
 
 public class Main {
     public static void main(String[] args) {
@@ -94,5 +95,10 @@ public class Main {
 
         sub.printSuperMethod();
         sub.printSuperValue();
+
+        System.out.println("___Abstraction___");
+
+        System.out.println(Abstract.myBio());
+        System.out.println(Abstract.whatIDo());
     }
 }
