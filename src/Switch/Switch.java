@@ -8,9 +8,20 @@ public class Switch {
         System.out.println("Day Start 0 to 6");
 
         // day generator
-        byte dayNumber = input.nextByte();
-        String day;
+        int dayNumber = Math.abs(input.nextInt());
+        String day = switch (dayNumber) {
+            case 0 -> "Saturday";
+            case 1 -> "Sunday";
+            case 2 -> "Monday";
+            case 3 -> "Thursday";
+            case 4 -> "Wednesday";
+            case 5 -> "Tuesday";
+            case 6 -> "Friday";
+            default -> "None (Invalid input)";
+        };
 
+        //* use also core switch
+        /*
         switch (dayNumber) {
             case 0:
                 day = "Saturday";
@@ -36,6 +47,7 @@ public class Switch {
             default:
                 day = "None (Invalid input)";
         }
+        */
 
         System.out.println("The day is " + day);
         input.close();
