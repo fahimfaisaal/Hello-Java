@@ -8,13 +8,21 @@ interface B {
 	public void interfaceB();
 }
 
-class InterfaceClass implements A, B{
+interface C {
+	public void interfaceC();
+}
+
+class InterfaceClass implements A, B, C {
 	public void interfaceA() {
 		System.out.println("I am interface A");
 	}
 
 	public void interfaceB() {
 		System.out.println("I am interface B");
+	}
+
+	public void interfaceC() {
+		System.out.println("Hello i am interface c.");
 	}
 }
 
