@@ -4,7 +4,7 @@ public class Arr {
 	 public static void main(String[] args) {
 		  // array with range
 		  byte[] byteNumber = new byte[10];
-		  int[] integeNumber = new int[10];
+		  int[] integerNumber = new int[10];
 		  float[] floatingNumber = new float[10];
 		  double[] doubleNumber = new double[10];
 		  char[] letters = new char[10];
