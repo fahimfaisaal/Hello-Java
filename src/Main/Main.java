@@ -1,18 +1,10 @@
 package Main;
-import Class.Constructor;
-import Class.House;
-import AccessModifer.Modifier;
-import AccessModifer.ProtectedModifier;
-import Final.FinalVariable;
-import Inheritance.Dog;
-import Inheritance.Parrot;
-import Super.SuperClass;
-import Super.SubClass;
-import AbstractJava.Abstract;
+import Generics.Generics;
+import TestGen.TestGen;
 
 public class Main {
     public static void main(String[] args) {
-        // Build myHouse object
+/*        // Build myHouse object
         House myHouse = new House("Fahim Faisal", "fahimfaisal.soikot@gmail.com");
 
         System.out.println("Before set -> " + myHouse.getOwnerGmail());
@@ -99,6 +91,21 @@ public class Main {
         System.out.println("___Abstraction___");
 
         System.out.println(Abstract.myBio());
-        System.out.println(Abstract.whatIDo());
+        System.out.println(Abstract.whatIDo());*/
+
+
+        // Dynamic type with generics
+        Generics<Integer> gen1 = new Generics<>(22);
+        Generics<Character> gen2 = new Generics<>('F');
+        Generics<String> gen3 = new Generics<>("Fahim Faisal");
+        Generics<Boolean> gen4 = new Generics<>(true);
+        Generics<TestGen> gen5 = new Generics<>(new TestGen("Hello user!"));
+
+        System.out.println("Integer: "  + gen1.getGen());
+        System.out.println("Character: " + gen2.getGen());
+        System.out.println("String: " + gen3.getGen());
+        System.out.println("Boolean: " + gen4.getGen());
+        System.out.println("Test Generics: " + gen5.getGen().getMessage());
+
     }
 }
